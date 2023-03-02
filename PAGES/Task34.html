@@ -2,31 +2,34 @@
 <html>
 
   <head>
-    <title>Задание 6</title>
+    <title>Задание 10</title>
     <style>
-      body {
-        margin: 0;
-      }
-
-      .blue {
-        background-color: blue;
-        width: 100vw;
-        height: 50%;
+      .wrapper {
+        height: 20vh;
+        display: flex;
+        background-color: lightgray;
       }
 
       .red {
-        background-color: red;
-        min-width: 40px;
-        max-width: 100vw;
-        height: 100vh;
+        width: 70%;
+        background: red;
+      }
+
+      .blue {
+        width: 70%;
+        height: 20px;
+        background: blue;
+        flex-shrink: 0;
+        align-self: center;
       }
 
     </style>
   </head>
 
   <body>
-    <div class="red">
-      <div class="blue"></div>
+    <div class="wrapper">
+      <span class="red"></span>
+      <span class="blue"></span>
     </div>
   </body>
 
