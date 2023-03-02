@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>Задание 3</title>
+    <title>Задание 4</title>
     <style>
       .wrapper {
         display: flex;
@@ -20,6 +20,16 @@
       @media screen and (min-width: 600px) {
         .wrapper {
           flex-direction: row;
+        }
+
+        .item:nth-child(even) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 599px) {
+        .item:nth-child(odd) {
+          display: none;
         }
       }
 
